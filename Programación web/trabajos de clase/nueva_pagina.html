@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>VELLORA</title>
+
+  <meta charset="UTF-8">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <style>
+
+
+    body {
+      background-color: #F5F3EF;
+      font-family: 'Montserrat', Arial, sans-serif;
+      text-align: center;
+      color: #1C1C1C;
+      margin: 0;
+    }
+
+
+    .banner {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
+
+
+    h1, h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: #1C1C1C;
+      letter-spacing: 2px;
+    }
+
+
+    h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+
+    .seccion {
+      margin: 80px 40px;
+    }
+
+
+    .seccion p {
+      font-size: 15px;
+      color: #77736E;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+    }
+
+
+    .boton {
+      background-color: #1C1C1C;
+      color: #F5F3EF;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 2px;
+      font-weight: 500;
+      display: inline-block;
+      letter-spacing: 2px;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+
+
+    .boton:hover {
+      background-color: #A58A5C;
+    }
+
+
+    .coleccion {
+      width: 90%;
+      margin: 100px auto;
+    }
+
+
+    .coleccion h2 {
+      margin-bottom: 5px;
+    }
+
+
+    .coleccion > p {
+      color: #77736E;
+      margin-bottom: 40px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+
+
+    .tabla {
+      width: 90%;
+      margin: 40px auto;
+      border-collapse: separate;
+      border-spacing: 25px;
+    }
+
+
+    .tabla th {
+      background-color: #1C1C1C;
+      color: #E9D7A8;
+      padding: 18px;
+      border-radius: 2px;
+      font-family: 'Montserrat', Arial;
+      font-size: 13px;
+      letter-spacing: 3px;
+      font-weight: 500;
+    }
+
+
+    .tabla td {
+      background-color: #ECE9E3;
+      color: #1C1C1C;
+      text-align: center;
+      padding: 20px;
+      border-radius: 2px;
+    }
+
+
+
+    .tabla img {
+      width: 200px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+
+    .tabla h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #1C1C1C;
+    }
+
+
+    .ver-mas {
+      background-color: #1C1C1C;
+      color: #F5F3EF;
+      text-decoration: none;
+      padding: 11px 24px;
+      border-radius: 2px;
+      font-weight: 500;
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+
+    .ver-mas:hover {
+      background-color: #A58A5C;
+    }
+
+
+    .productos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+
+    .producto {
+      background-color: #ECE9E3;
+      padding: 20px;
+      border-radius: 2px;
+      width: 220px;
+    }
+
+
+    .producto img {
+      width: 200px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+
+    .producto h3 {
+      color: #1C1C1C;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+
+    .producto p {
+      color: #77736E;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+
+    .producto a {
+      background-color: #1C1C1C;
+      color: #F5F3EF;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 2px;
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+
+    .producto a:hover {
+      background-color: #A58A5C;
+    }
+
+
+    .contacto {
+      margin: 100px 20px 60px;
+    }
+
+
+    .contacto h2 {
+      font-size: 35px;
+    }
+
+
+    .contacto a {
+      color: #1C1C1C;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+
+    .contacto a:hover {
+      color: #A58A5C;
+    }
+
+
+    footer {
+      background-color: #1C1C1C;
+      color: #E9D7A8;
+      padding: 25px;
+      margin-top: 60px;
+    }
+
+
+    footer p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <img class="banner" src="imagenes/BANNERVELLORA.jpeg">
+
+
+  <div class="seccion">
+
+    <h2>VELLORA</h2>
+
+    <p>
+      Elegancia que marca tu tiempo.
+    </p>
+
+    <p>
+      Descubre nuestra colección de relojes diseñados
+      para acompañarte en cada ocasión.
+    </p>
+
+    <br>
+
+    <a href="#" class="boton">
+      VER COLECCIÓN
+    </a>
+
+  </div>
+
+
+
+
+  <div class="coleccion">
+
+    <h2>COLECCIONES</h2>
+
+    <p>
+      Un modelo para cada ocasión
+    </p>
+
+
+    <table class="tabla">
+
+
+      <!-- TITULO -->
+
+      <tr>
+
+        <th colspan="3">
+          DE DÍA
+        </th>
+
+      </tr>
+
+
+      <!-- PRODUCTOS -->
+
+      <tr>
+
+
+        <td>
+
+          <img src="imagenes/reloj1.jpeg">
+
+          <h3>
+            Vellora Classic
+          </h3>
+
+          <a href="#" class="ver-mas">
+            VER MÁS
+          </a>
+
+        </td>
+
+
+        <td>
+
+          <img src="imagenes/reloj2.jpeg">
+
+          <h3>
+            Vellora Silver
+          </h3>
+
+          <a href="#" class="ver-mas">
+            VER MÁS
+          </a>
+
+        </td>
+
+
+        <td>
+
+          <img src="imagenes/reloj3.jpeg">
+
+          <h3>
+            Vellora Elegant
+          </h3>
+
+          <a href="#" class="ver-mas">
+            VER MÁS
+          </a>
+
+        </td>
+
+
+      </tr>
+
+
+    </table>
+
+  </div>
+
+
+  <!-- colecciones  -->
+
+  <div class="coleccion">
+
+    <h2>DE NOCHE</h2>
+
+    <p>
+      Diseños elegantes para momentos especiales.
+    </p>
+
+
+    <div class="productos">
+
+
+      <!-- RELOJ 1 -->
+
+      <div class="producto">
+
+        <img src="imagenes/reloj6.png">
+
+        <h3>
+          Vellora Black
+        </h3>
+
+        <p>
+          Elegancia y estilo.
+        </p>
+
+        <a href="#">
+          VER MÁS
+        </a>
+
+      </div>
+
+
+      <!-- RELOJ 2 -->
+
+      <div class="producto">
+
+        <img src="imagenes/reloj5.png">
+
+        <h3>
+          Vellora Gold
+        </h3>
+
+        <p>
+          Un diseño sofisticado.
+        </p>
+
+        <a href="#">
+          VER MÁS
+        </a>
+
+      </div>
+
+
+      <!-- RELOJ 3 -->
+
+      <div class="producto">
+
+        <img src="imagenes/reloj4.png">
+
+        <h3>
+          Vellora Premium
+        </h3>
+
+        <p>
+          Para ocasiones especiales.
+        </p>
+
+        <a href="#">
+          VER MÁS
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="seccion">
+
+    <a href="#" class="boton">
+      ORDENAR AHORA
+    </a>
+
+  </div>
+
+
+  <div class="contacto">
+
+    <h2>
+      CONTÁCTANOS
+    </h2>
+
+    <a href="https://www.instagram.com">
+      INSTAGRAM
+    </a>
+
+    |
+
+    <a href="https://www.facebook.com">
+      FACEBOOK
+    </a>
+
+    |
+
+    <a href="https://wa.me/">
+      WHATSAPP
+    </a>
+
+  </div>
+
+
+  <footer>
+
+    <p>
+      VELLORA 2026
+    </p>
+
+  </footer>
+
+
+</body>
+
+</html>

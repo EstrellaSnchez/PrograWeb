@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pétalos y Raíces</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="diseño_floreria.css">
+</head>
+
+<body>
+
+
+  <div class="aviso-superior">
+    Tus flores llegan, estés donde estés. Envíos de flores a Morelia.
+  </div>
+
+  <img class="banner" src="imagenes/banner_floreria.png" width="100%">
+
+  <div class="seccion" style="background-color: #cc9f9a;">
+    <p>
+      En Pétalos y Raíces nos especializamos en hacer que cada momento se sienta especial. 
+    </p>
+  
+  <div class="seccion-productos">
+    <div class="catalogo-grid">
+      
+    
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <img src="imagenes/ramo1.jpg" alt="Sofía">
+        </div>
+        <div class="precio">$980</div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Sofía</p>
+      </div>
+
+
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <img src="imagenes/ramo2.jpg" alt="Luisa">
+        </div>
+        <div class="precio">$1,000</div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Luisa</p>
+      </div>
+
+
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <img src="imagenes/ramo3.jpg" alt="Abigail">
+        </div>
+        <div class="precio">$990</div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Abigail</p>
+      </div>
+
+
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <span class="badge-oferta">¡Oferta!</span>
+          <img src="imagenes/ramo4.jpg" alt="Kary">
+        </div>
+        <div class="precio">
+          <span class="precio-tachado">$2,800</span> $2,000
+        </div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Kary</p>
+      </div>
+
+      
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <span class="badge-oferta">¡Oferta!</span>
+          <img src="imagenes/ramo5.jpg" alt="Gabriela">
+        </div>
+        <div class="precio">
+          <span class="precio-tachado">$2,800</span> $2,000
+        </div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Gabriela</p>
+      </div>
+      
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <span class="badge-oferta">¡Oferta!</span>
+          <img src="imagenes/ramo6.jpg" alt="Daniela">
+        </div>
+        <div class="precio">
+          <span class="precio-tachado">$2,800</span> $2,000
+        </div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Daniela</p>
+      </div>
+      
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <span class="badge-oferta">¡Oferta!</span>
+          <img src="imagenes/ramo7.jpg" alt="Sol">
+        </div>
+        <div class="precio">
+          <span class="precio-tachado">$2,800</span> $2,000
+        </div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Sol</p>
+      </div>
+      
+      <div class="producto-card">
+        <div class="contenedor-img">
+          <span class="badge-oferta">¡Oferta!</span>
+          <img src="imagenes/ramo8.jpg" alt="Mari">
+        </div>
+         <div class="precio">$2900</div>
+        <a href="#contacto" class="btn-enviar-ahora">Personalizar ramo</a>
+        <p class="nombre-producto">Mari</p>
+      </div>
+
+    </div>
+  </div>
+
+ 
+  <section id="contacto" class="contacto">
+    <h2>Realiza tu pedido</h2>
+    <p>Llena el formulario y enviaremos tu pedido a domicilio en 2 horas o menos.</p>
+
+    <form class="formulario-pedido">
+      <div class="grupo-input">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Sofía Martínez" required>
+      </div>
+
+      <div class="grupo-input">
+        <label for="telefono">Teléfono / WhatsApp:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 4431234567" required>
+      </div>
+
+      <div class="grupo-input">
+        <label for="producto-deseado">¿Qué producto deseas?</label>
+        <select id="producto-deseado" name="producto_deseado">
+          <option value="buchon">Ramo Sofía</option>
+          <option value="quedas-bien">Ramo Luisa</option>
+          <option value="detalle">Ramo Abigail</option>
+          <option value="enamoralas">Ramo Kary</option>
+          <option value="detalle">Ramo Gabriela</option>
+          <option value="detalle">Ramo Sol</option>
+          <option value="detalle">Ramo Daniela</option>
+          <option value="detalle">Ramo Mari</option>
+        </select>
+      </div>
+
+      <div class="grupo-input">
+        <label>Método de entrega:</label>
+        <div class="contenedor-radio">
+          <label class="etiqueta-radio">
+            <input type="radio" name="metodo_entrega" value="sucursal" checked> 
+            Recoger en sucursal
+          </label>
+          <label class="etiqueta-radio">
+            <input type="radio" name="metodo_entrega" value="domicilio"> 
+            Envío a domicilio en Morelia
+          </label>
+        </div>
+      </div>
+
+      <div class="grupo-input">
+        <label for="detalles">Detalles o dedicatoria:</label>
+        <textarea id="detalles" name="detalles" rows="4" placeholder="Especifica dedicatoria para la tarjeta..."></textarea>
+      </div>
+
+      <button type="submit" class="boton-enviar">Enviar pedido por WhatsApp</button>
+    </form>
+
+    <div class="redes" style="margin-top: 40px;">
+      <a href="https://wa.me/524431101304" target="_blank">WhatsApp </a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Pétalos y Raíces. Florería Morelia © 2026 - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+
+</html>

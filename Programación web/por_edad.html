@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Promociones y Recomendaciones</title>
+    <!-- Vinculamos la hoja de estilos externa -->
+    <link rel="stylesheet" href="edad_style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>¡PROMOCIONES PARA TI!</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" required min="1" max="120" placeholder="Escribe tu edad">
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" required>
+                    <option value="">Selecciona...</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select>
+            </div>
+
+            <button type="submit">VER BENEFICIOS</button>
+        </form>
+
+        <div id="resultado">
+            <h3 id="saludo"></h3>
+            <p id="categoria"></p>
+            <div id="imagenContainer"></div>
+            <div id="cuponContainer" class="coupon"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript embebido dentro de la etiqueta script en HTML -->
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const edad = parseInt(document.getElementById('edad').value);
+            const sexo = document.getElementById('sexo').value;
+
+            const saludoElem = document.getElementById('saludo');
+            const categoriaElem = document.getElementById('categoria');
+            const imagenContainer = document.getElementById('imagenContainer');
+            const cuponContainer = document.getElementById('cuponContainer');
+            const resultadoDiv = document.getElementById('resultado');
+
+            saludoElem.textContent = `¡Hola, ${nombre}!`;
+            let categoriaTexto = "";
+            let imagenHTML = "";
+            let cuponTexto = "";
+
+            // Lógica según la edad y el sexo
+            if (edad < 18) {
+                if (sexo === 'F') {
+                    categoriaTexto = "¡Recomendación especial: Sección Infantil (Niña)!";
+                    imagenHTML = '<img src="imagenes/princesa.jpg" alt="Niña">';
+                } else {
+                    categoriaTexto = "¡Recomendación especial: Sección Infantil (Niño)!";
+                    imagenHTML = '<img src="imagenes/up.jpg" alt="Niño">';
+                }
+                cuponTexto = "Cupón: INFANTIL20 - 20% de descuento en tu combo para el cine!.";
+
+            } else if (edad >= 18 && edad <= 29) {
+                if (sexo === 'F') {
+                    categoriaTexto = "¡Recomendación especial: Salón de Belleza y Cuidado Personal!";
+                    imagenHTML = '<img src="imagenes/spa.webp" alt="Spa">';
+                    cuponTexto = "Cupón: BELLA30 - 30% de descuento en tu primer masaje completo en el Spa.";
+                } else {
+                    categoriaTexto = "¡Recomendación especial: Abrimos un nuevo bar!";
+                    imagenHTML = '<img src="imagenes/bar.webp" alt="Bar">';
+                    cuponTexto = "Cupón: VIVE50 - La primer ronda de shots va por nuestra cuenta!";
+                }
+            } else if (edad >= 30) {
+                if (sexo === 'F') {
+                    categoriaTexto = "¡Recomendación especial: El mejor café de la ciudad!";
+                    imagenHTML = '<img src="imagenes/cafe.jpg" alt="Café">';
+                    cuponTexto = "Cupón: CAFETERIA40 - 40% de descuento en tu primera orden en la cafetería.";
+                } else {
+                    categoriaTexto = "¡Recomendación especial: Gimnasio!";
+                    imagenHTML = '<img src="imagenes/gym.jpg" alt="Gym">';
+                    cuponTexto = "Cupón: VIVE50 - Tu primer semana por solo $50!";
+                }
+            }
+
+            categoriaElem.textContent = categoriaTexto;
+            imagenContainer.innerHTML = imagenHTML;
+            cuponContainer.textContent = cuponTexto;
+
+            resultadoDiv.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

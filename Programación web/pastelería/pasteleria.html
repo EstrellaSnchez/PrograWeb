@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sweet Slices</title>
+  <meta charset="UTF-8">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+
+  <img class="banner" src="imagenes/banner.png" width="100%">
+
+  <div class="seccion" style="background-color: #cc9f9a;">
+    <p>
+      Bienvenido a Sweet Slices, donde cada rebanada está hecha con amor
+      y mucho sabor. ¡Endulza tu día con nosotros!
+    </p>
+
+    <a href="#" class="boton">Ordenar ahora</a>
+  </div>
+
+  <div class="imageneZs">
+    <h2>Nuestros productos</h2>
+
+    <img src="imagenes/image.png" width="150">
+    <img src="imagenes/imagen 2.png" width="150">
+    <img src="imagenes/imagen 3.png" width="150">
+    <img src="imagenes/imagen 1.png" width="150">
+  </div>
+
+  <table width="90%" style="margin: 0 auto;">
+
+    <caption>
+      <strong>Lista de Precios</strong>
+    </caption>
+
+    <tr>
+      <th>ID</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+
+    <tr>
+      <th>Nombre</th>
+      <td>Pastel de Chocolate</td>
+      <td>Pastel de Fresa</td>
+      <td>Pastel de Tiramisú</td>
+      <td>Cheesecake</td>
+    </tr>
+
+    <tr>
+      <th>Precio</th>
+      <td>$15.00</td>
+      <td>$12.00</td>
+      <td>$14.00</td>
+      <td>$16.00</td>
+    </tr>
+
+  </table>
+
+  <!-- ------------------------- -->
+
+    <section id="contacto" class="contacto">
+        <h2>
+            ¿Listo para tu próxima porción de felicidad?
+        </h2>
+        <p>
+            Llena el siguiente formulario para realizar tu pedido o apartar tus postres favoritos.
+        </p>
+
+        <!-- FORMULARIO ÚTIL PARA EL USUARIO -->
+      <!-- FORMULARIO ÚTIL PARA EL USUARIO -->
+        <form class="formulario-pedido">
+            <div class="grupo-input">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Sofía Martínez" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="telefono">Teléfono / WhatsApp:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 4431234567" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="producto-deseado">¿Qué producto deseas?</label>
+                <select id="producto-deseado" name="producto_deseado">
+                    <option value="pastel">Pastel Completo</option>
+                    <option value="cupcakes">Cupcakes</option>
+                    <option value="rebanada">Rebanada de Pastel</option>
+                    <option value="galletas">Galletas</option>
+                </select>
+            </div>
+
+            <!-- NUEVA SECCIÓN DE RADIO BUTTONS: Método de entrega -->
+            <div class="grupo-input">
+                <label>Método de entrega:</label>
+                <div class="contenedor-radio">
+                    <label class="etiqueta-radio">
+                        <input type="radio" name="metodo_entrega" value="sucursal" checked> 
+                        Recoger en sucursal
+                    </label>
+                    <label class="etiqueta-radio">
+                        <input type="radio" name="metodo_entrega" value="domicilio"> 
+                        Envío a domicilio
+                    </label>
+                </div>
+            </div>
+
+            <div class="grupo-input">
+                <label for="detalles">Detalles o dedicatoria:</label>
+                <textarea id="detalles" name="detalles" rows="4" placeholder="Especifica sabores, tamaño, fecha de entrega o mensaje personalizado..."></textarea>
+            </div>
+
+            <button type="submit" class="boton-principal boton-enviar">Enviar pedido</button>
+        </form>
+        <div class="redes" style="margin-top: 40px;">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Correo</a>
+        </div>
+    </section>
+
+  <div class = "contacto">
+    <h2>Contáctanos</h2>
+
+    <a href="https://www.instagram.com">Instagram</a> |
+    <a href="https://www.facebook.com">Facebook</a> |
+    <a href="https://wa.me/">WhatsApp</a>
+  </div>
+
+  <footer>
+    <p>Sweet Slices 2026</p>
+  </footer>
+
+</body>
+
+</html>
